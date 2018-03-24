@@ -1,0 +1,32 @@
+{
+  "name": "zhfuli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./client/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^9.6.0",
+    "cheerio": "^1.0.0-rc.2",
+    "headless-chrome-crawler": "^1.4.0",
+    "lodash": "^4.17.5",
+    "request": "^2.85.0",
+    "request-promise-native": "^1.0.5",
+    "zhihu": "^1.4.1"
+  },
+  "engines": {
+    "node": ">=6.5",
+    "npm": ">=3.10"
+  },
+  "browserslist": [">1%", "last 4 versions", "Firefox ESR", "not ie < 9"],
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-promise": "^3.7.0"
+  }
+}
