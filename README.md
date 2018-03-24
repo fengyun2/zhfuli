@@ -12,3 +12,4 @@
 5.  [nodeSpider](https://github.com/chong0808/nodeSpider)
 6.  [https://greasyfork.org/en/scripts/350-izhihu/code](https://greasyfork.org/en/scripts/350-izhihu/code)
 7.  [Zhihu-Spider](https://github.com/starkwang/Zhihu-Spider)
+8.  [用 NodeJS 爬取知乎的关系链](https://segmentfault.com/a/1190000004669003)
