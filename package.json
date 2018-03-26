@@ -1,21 +1,19 @@
 {
   "name": "zhfuli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node ./client/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["spider"],
+  "author": "ly2011 <1518550424@qq.com>",
+  "license": "MIT",
   "dependencies": {
     "@types/node": "^9.6.0",
     "cheerio": "^1.0.0-rc.2",
-    "headless-chrome-crawler": "^1.4.0",
     "lodash": "^4.17.5",
     "request": "^2.85.0",
-    "request-promise-native": "^1.0.5",
     "zhihu": "^1.4.1"
   },
   "engines": {
@@ -27,6 +25,11 @@
     "babel-eslint": "^8.2.2",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-promise": "^3.7.0"
-  }
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "repository": "https://github.com/fengyun2/zhfuli.git",
+  "private": true
 }
