@@ -1,8 +1,8 @@
 // 获取某个知乎问题的回答列表
-const { request, cheerio } = require("../config/commonModules");
+const { request, cheerio } = require('../config/commonModules');
 
 const answers = function(params) {
-  if (typeof params === "string") {
+  if (typeof params === 'string') {
     params = {
       token: arguments[0],
       offset: arguments[1] || 0
@@ -10,21 +10,21 @@ const answers = function(params) {
     };
   }
   const opt = {
-    uri: "https://www.zhihu.com/node/QuestionAnswerListV2",
+    uri: 'https://www.zhihu.com/node/QuestionAnswerListV2',
     form: {
-      method: "next",
+      method: 'next',
       params: JSON.stringify({
         url_token: params.token,
         pageSize: params.pagesize,
         offset: params.offset || 0
       })
     },
-    method: "POST",
+    method: 'POST',
     headers: {
-      "User-Agent":
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) " +
-        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36",
-      Referer: "https://www.zhihu.com/question/" + params.token
+      'User-Agent':
+        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) ' +
+        'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+      Referer: 'https://www.zhihu.com/question/' + params.token
     }
   };
 
@@ -38,22 +38,22 @@ const answers = function(params) {
             decodeEntities: false
           });
 
-          const author = $(".zm-item-answer-author-info");
-          const authorAnchor = author.find(".author-link");
-          const voters = $("span.voters a");
-          const content = $(".zm-editable-content");
+          const author = $('.zm-item-answer-author-info');
+          const authorAnchor = author.find('.author-link');
+          const voters = $('span.voters a');
+          const content = $('.zm-editable-content');
           const ans = {};
 
           if (authorAnchor.length) {
             ans.author = {
               name: authorAnchor.text(),
-              profileUrl: authorAnchor.attr("href"),
-              bio: author.find("span[title]").attr("title"),
-              avatar: author.find("img").attr("src")
+              profileUrl: authorAnchor.attr('href'),
+              bio: author.find('span[title]').attr('title'),
+              avatar: author.find('img').attr('src')
             };
           } else {
             ans.author = {
-              name: "匿名用户"
+              name: '匿名用户'
             };
           }
 
