@@ -1607,9 +1607,10 @@ yallist@^2.1.2:
   version "2.1.2"
   resolved "http://registry.npm.taobao.org/yallist/download/yallist-2.1.2.tgz#1c11f9218f076089a47dd512f93c6699a6a81d52"
 
-zhihu@^1.4.1:
-  version "1.4.1"
-  resolved "http://registry.npm.taobao.org/zhihu/download/zhihu-1.4.1.tgz#30253ee37953782fec3f5db9572752ab65c8aaf2"
+zhihu@^1.4.3:
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/zhihu/-/zhihu-1.4.3.tgz#330e59ec5641c30056bd1e169cc530780624ebc8"
+  integrity sha512-3tkDlfgz+LrWhaF5Khcznbfuw9Q0JY15h/sBL5hrH2hTpZFhrAXVEoY4ckyXTM86BBmdD0/1tqSQQRQ+vjsrAQ==
   dependencies:
     async "^1.5.2"
     bluebird "^3.4.0"
