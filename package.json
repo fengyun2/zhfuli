@@ -4,23 +4,33 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./client/index.js"
+    "start": "node ./client/index.js",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
-  "keywords": ["spider"],
+  "keywords": [
+    "spider"
+  ],
   "author": "ly2011 <1518550424@qq.com>",
   "license": "MIT",
   "dependencies": {
     "@types/node": "^9.6.0",
     "cheerio": "^1.0.0-rc.2",
-    "lodash": "^4.17.5",
-    "request": "^2.85.0",
-    "zhihu": "^1.4.1"
+    "lodash": "^4.17.21",
+    "request": "^2.88.0",
+    "zhihu": "^1.4.1",
+    "@snyk/protect": "latest"
   },
   "engines": {
     "node": ">=6.5",
     "npm": ">=3.10"
   },
-  "browserslist": [">1%", "last 4 versions", "Firefox ESR", "not ie < 9"],
+  "browserslist": [
+    ">1%",
+    "last 4 versions",
+    "Firefox ESR",
+    "not ie < 9"
+  ],
   "devDependencies": {
     "babel-eslint": "^8.2.2",
     "eslint": "^4.19.1",
@@ -31,5 +41,6 @@
     "eslint-plugin-standard": "^3.0.1"
   },
   "repository": "https://github.com/fengyun2/zhfuli.git",
-  "private": true
+  "private": true,
+  "snyk": true
 }
