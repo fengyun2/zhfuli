@@ -13,7 +13,7 @@
     "@types/node": "^9.6.0",
     "cheerio": "^1.0.0-rc.2",
     "lodash": "^4.17.5",
-    "request": "^2.85.0",
+    "request": "^2.88.2",
     "zhihu": "^1.4.1"
   },
   "engines": {
